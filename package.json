@@ -1,0 +1,23 @@
+{
+  "name": "binarysearch",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "Tree structures. BST, AVL, B-Tree",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node index.ts"
+  },
+  "keywords": [
+    "TypeScript",
+    "B-Tree",
+    "BST",
+    "AVL",
+    "BeamSearch",
+    "HashMap"
+  ],
+  "author": "sunyawhite12@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
