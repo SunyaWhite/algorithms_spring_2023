@@ -3,6 +3,7 @@ import { BST } from "./Structures/BST";
 import { convertToBalancedBST } from "./Structures/ArrayToBalancedBST";
 import { BTree } from "./Structures/B-Tree";
 import { CustomHashMap } from "./HashTable/ChainedHashTable";
+import { SelfOrganazingList } from "./SelfOrganizingFile/SelfOrganizingFile";
 
 const createPredicate = (valueToSearch: number) => (elem: number) =>
   elem - valueToSearch;
@@ -96,8 +97,33 @@ function DemoHashMap() {
   hashMap.insertKeyValue(7, { a: 2, b: 3 });
 }
 
+function DemoSOF() {
+  const list = new SelfOrganazingList<number>();
+
+  list.addValue(1);
+  list.addValue(2);
+  list.addValue(3);
+  list.addValue(4);
+  list.addValue(5);
+
+  list.display();
+
+  list.findValue((elem) => elem === 4);
+  list.findValue((elem) => elem === 4);
+  list.display();
+
+  list.findValue((elem) => elem === 5);
+  list.findValue((elem) => elem === 5);
+  list.findValue((elem) => elem === 5);
+  list.display();
+
+  list.findValue((elem) => elem === 2);
+  list.display();
+}
+
+DemoSOF();
 // DemoBST();
 // DemoAVL();
 // DemoBalancedBST();
 // DemoBTree();
-DemoHashMap();
+// DemoHashMap();
